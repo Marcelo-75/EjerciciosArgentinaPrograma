@@ -1,5 +1,7 @@
 package clase3;
 
+import java.nio.charset.Charset;
+
 /* ************************************************************************************** */
 /* EN ESTA VERSION SE USAN DOS METODOS, UNO PARA CODIFICAR Y OTRO PARA DECODIFICAR Y SE   */
 /* USA UNA VARIABLE STRING PARA COMPARAR LA CADENA A CODIFICAR O DECODIFICAR CON EL ABE-  */
@@ -12,11 +14,11 @@ package clase3;
 public class Ejercicio2_b {
 	public static void main(String[] args) {
 		String cadena = "hola que tal";
-		String textoCod = Codificar(cadena, 1);
+		String textoCod = Codificar(cadena, 3);
 		System.out.println(textoCod);
 		//Se podria asignar a la variable directamente el resultado del metodo Codificar con la siguiente linea.
 		//String textoDecod = Decodificar(Codificar(cadena, 2), -2);
-		String textoDecod = Decodificar(textoCod, -1);
+		String textoDecod = Decodificar(textoCod, -3);
 		System.out.println(textoDecod);
 	}
 
